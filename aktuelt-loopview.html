@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="Aktuelle Events for Kalklandet // Østsjællands Museum
+    Aktuelle events for Kalklandet, Stevns naturcenter og Koldkrigsmuseum Stevnsfort">
+    <meta name="keywords" content="museer, museum, oplev danmark, oplev kalklandet, kalklandet, natur, dansk natur, dansk historie, geomuseum faxe, koldkrigsmuseum stevnsfort, stevns klint, unesco, natur i danmark, undervisning, rundvisning, nyt om kalklandet">
+    <title>Aktuelt // Kalklandet // Østsjællands Museum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <a href="index.html"><img src="pics/kalklandetlogo.png" alt="logo"></a>
+
+        <div id="burger-button" onclick="openSidebar()">
+            <div class="burger-bar"></div>
+            <div class="burger-bar"></div>
+            <div class="burger-bar"></div>
+        </div>
+
+        <div id="burger-menu">
+            <nav id="navmenu">
+                <div class="menuB"><a href="aktuelt-loopview.html">
+                        <p>Aktuelt</p>
+                    </a>
+                </div>
+                <div class="menuB"><a href="#">
+                        <p>Viden</p>
+                    </a></div>
+                <div class="menuB"><a href="#">
+                        <p>Om os</p>
+                    </a></div>
+                <div class="menuB"><a href="#">
+                        <p>Kontakt</p>
+                    </a></div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="splash_aktuelt">
+        <img src="pics/aktuelt.jpg" alt="aktuelt">
+        <h1 class="bottom_left_h2">Aktuelt</h1>
+    </section>
+
+    <template class="aktuel_template">
+        <div class="test_div">
+
+            <div class="aktuelt_billede">
+                <div class="dato_container">
+                    <p class="aktuel_dato">
+                    </p>
+                </div>
+            </div>
+
+            <div class="loop_til_singleview_box">
+                <h3 class="aktuelt_titel"></h3>
+                <p class="loopview_tekst"></p>
+                <h4 class="attraktion"></h4>
+
+            </div>
+        </div>
+    </template>
+
+    <main>
+
+        <div class="flexFilter">
+            <button id="filter-button"><img src="pics/filter.png" alt="filter">
+                Filter
+            </button>
+            <nav class="filtermenu">
+                <h3 class="du_ser dusersamlet">Du ser:</h3>
+                <h3 id="filter_tekst" class="dusersamlet">Alle</h3>
+                <div class="filterknap">
+                    <button class="filter valgt" data-kat="alle">Alle</button>
+                    <button class="filter" data-kat="Koldkrigsmuseum Stevnsfort">Koldkrigsmuseum Stevnsfort</button>
+                    <button class="filter" data-kat="Stevns Klint">Stevns Klint</button>
+                    <button class="filter" data-kat="Geomuseum Faxe">Geomuseum Faxe</button>
+                </div>
+            </nav>
+        </div>
+
+        <section class="container_aktuelt">
+
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footerWrapper">
+                <h4>Åbningstider 2019</h4>
+
+                <ul>
+                    <li><strong>1. april - 30. juni:</strong>
+                        Man - Søn: 11:30 - 15:00</li>
+                    <li><strong>1. juli - 30. september:</strong>
+                        Man -Søn: 10:00-17:00</li>
+                    <li>
+                        <strong>1. oktober - 31. oktober:</strong>
+                        Man - Søn: 11 - 15:00
+                    </li>
+
+                </ul>
+
+                <h4>Tilmeld nyhedsbrev</h4>
+                <form action="/action_page.php">
+                    <input type="text" name="Indtast email"><br>
+                    <input type="submit" value="Tilmeld">
+                </form>
+
+                <h4>Find os på</h4>
+                <ul>
+                    <li> <a href=""> Instagram </a> </li>
+                    <li> <a href=""> Facebook </a> </li>
+                    <li> <a href=""> Youtube </a> </li>
+                </ul>
+            </div>
+
+            <div class="footerBox2">
+                <ul>
+                    <li> <a href="koldkrig.html"> Koldkrigsmuseum </a> </li>
+                    <li> <a href="geomuseumfaxe.html"> Geomuseum Faxe </a> </li>
+                    <li> <a href="stevnsklint.html"> Stevns klint </a> </li>
+                </ul>
+            </div>
+
+            <div class="footerBox3">
+                <h4>Kalklandet // Østsjællandsmuseum</h4>
+                <address>Rådhusvej 2</address>
+                <address>4640 Faxe</address>
+
+                <h4>Kontakt os</h4>
+                <ul>
+                    <li> <a href="">museum@oesm.dk</a></li>
+                </ul>
+
+                <div class="footerBooking">
+                    <h4>Booking</h4>
+                    <ul>
+                        <li> +45 56502806</li>
+                        <li>
+                            <strong>Telefonen er åben:</strong>
+                            <span>Mandag - Fredag fra 9 - 15:00</span>
+                        </li>
+                    </ul>
+                </div>
+                <img src="pics/kalklandetlogo.png" alt="kalklandet logo">
+            </div>
+
+
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
